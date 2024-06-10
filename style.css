@@ -1,0 +1,266 @@
+.dropdown {
+    display: inline-block;
+    position: relative;
+    /* background-color: blue; */
+    color: antiquewhite;
+
+    width: 250px;
+}
+
+.dropbtn {
+    color: black;
+    background-color: blueviolet;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 15px;
+    width: 250px;
+    /* text-align: center; */
+}
+
+.dropdown-content {
+    width: 250px;
+    display: none;
+    position: relative;
+    box-shadow: 0px 12px 10px 0px rgb(72, 9, 72);
+    /* max-width: 180px; */
+    z-index: 1px;
+    background-color: rgb(244, 232, 216);
+
+}
+
+.dropdown-content a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 2px 1px;
+    width: 250px;
+    /* border:1px solid black; */
+    text-align: center;
+
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgb(244, 238, 244);
+    color: rgb(167, 30, 146);
+    width: 250px;
+    /* border:1px solid black; */
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(90, 9, 92, 0.845);
+    width: 250px;
+    /* border:1px solid black; */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    width: 250px;
+    text-align: center;
+}
+
+header {
+    background-color: rgba(250, 246, 249, 0.516);
+
+    /* nav-up: 0; */
+}
+
+header h5 code {
+    color: purple;
+
+}
+
+header p img {
+    border-radius: 10px;
+    top: 8px;
+    right: 16px;
+    /* bottom:90px; */
+    position: absolute;
+}
+
+/* h1.p{
+    color:red;
+ } */
+header h5 {
+    /* background-color: rgba(168, 38, 38, 0.612); */
+    margin: 0px;
+    padding: 0px;
+    color: black;
+    font-size: 30px;
+    /* padding:1px 1em 0 1em ; */
+    /* height:100px ; */
+
+
+    align-items: right;
+    /* white-space-collapse:; */
+
+}
+
+h1 {
+    text-align: center;
+    background-color: aqua;
+}
+
+header nav ul li a {
+    padding: 1em 0px;
+    text-align: right;
+    color: aliceblue;
+}
+
+/* .red{
+    border-radius:50%;
+} */
+
+nav {
+    /* height:px; */
+    text-align: right;
+    /* padding-inline-start: 30px; */
+    padding: 0px;
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(240, 241, 242);
+}
+
+ul {
+    /* justify-content: space-around; */
+    text-align: center;
+    padding: 1em 0;
+    color: rgb(224, 224, 20);
+    /* display:inline; */
+    /* align-items: center; */
+    /* align-content: ; */
+
+}
+
+ul li {
+    margin: 0 1em;
+    /* if em0then pass all items */
+    display: inline;
+}
+
+nav ul li a {
+    color: rgb(235, 235, 147);
+    /* padding:1px; */
+    /* display:inline; */
+    text-decoration: none;
+}
+
+/* li:hover{
+   
+    background-color: rgb(220, 220, 228);
+} */
+
+h5 {
+    color: black;
+    text-align: left;
+    font-size: 20px;
+}
+
+main h5,
+p {
+    text-align: center;
+    /* quotes:\0022; */
+}
+
+main h5 .secondmss {
+    color: purple;
+}
+
+body {
+    background-color: rgb(243, 238, 232);
+    margin: 1em 0px;
+    padding: 2px;
+    color: black;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    padding: 20px;
+    margin: 2px;
+}
+
+h4 {
+    font-size: 20px;
+    text-align: center;
+    padding: 2px;
+    margin: 2px;
+}
+
+div {
+    text-align: center;
+
+}
+
+.para {
+    /* border: 1px solid;
+    width:400px; */
+    /* text-align: center;/ */
+    /* max-lines: 100cm; */
+    /* length:5px; */
+    margin: 3px;
+    padding: 2px 3px;
+}
+
+footer {
+    background-color: black;
+    color: aliceblue;
+    padding: 5px;
+    margin: 2px;
+    text-align: center;
+    /* background-color: blue; */
+    text-decoration: navajowhite;
+    bottom: 0;
+    /* position:fixed; */
+    position: fixed;
+    width: 100%;
+
+}
+
+.p {
+    color: aliceblue;
+    padding: 5px;
+    margin: 2px;
+    text-align: center;
+}
+
+footer div a {
+    text-decoration: navajowhite;
+    color: white;
+    /* text-decoration:navajowhite; */
+    text-align: center;
+    /* background-color: rgb(47, 255, 0); */
+}
+
+.code-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.code-line {
+    opacity: 0;
+    animation: showLine 1s forwards;
+}
+
+@keyframes showLine {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Add delays to each line */
+.code-line:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.code-line:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.code-line:nth-child(3) {
+    animation-delay: 2s;
+}
+
+.code-line:nth-child(4) {
+    animation-delay: 3s;
+}
